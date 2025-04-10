@@ -53,19 +53,27 @@ header h1 {
 }
 
 table {
-  width: 100%;
+  margin-inline: auto;
+  width: 80%;
   border-collapse: collapse;
+  margin-bottom: 2rem;
+  border: 3px solid #646161;
 }
 
+table,
 td,
 th {
-  border: 1px solid #dddddd;
+  /* border: 1px solid #646161; */
   text-align: left;
-  padding: 8px;
+  padding: 4px;
 }
 
 th {
   background-color: #dddddd;
+}
+
+tr {
+  border-bottom: 1px solid #bdbbbb;
 }
 
 nav,
@@ -162,7 +170,7 @@ blockquote::after {
   margin-left: 0.5rem;
 }
 article {
-  padding: 1rem;
+  padding: 1rem 5rem;
   margin: 3rem;
   /* border: 3px solid #333; */
   border-radius: 10px;
