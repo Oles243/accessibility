@@ -94,6 +94,13 @@ main {
   /* border: 5px solid green; */
 }
 
+/* span {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+} */
+
 footer,
 footer > span {
   background-color: #333;
