@@ -268,11 +268,15 @@ li a:active {
   font-weight: 700;
 }
 .profile-img {
-  width: 50%;
-  height: auto;
+  /* width: 50%; */
+  width: 300px;
+  /* height: auto; */
   border-radius: 50%;
   margin: 1rem 0;
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
+  shape-outside: margin-box;
+  margin-right: 1.5rem;
 }
 
 .error {
