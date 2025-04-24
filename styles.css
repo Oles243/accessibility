@@ -22,7 +22,14 @@ h6 {
 }
 
 body {
-  background-color: #c1bbbb;
+  /* background-color: #c1bbbb;*/
+  background: #e8e3d8;
+  background: linear-gradient(
+    150deg,
+    rgba(232, 227, 216, 1) 34%,
+    rgba(186, 181, 177, 1) 84%,
+    rgba(130, 122, 122, 1) 100%
+  );
   margin-inline: auto;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,11 +62,13 @@ header h1 {
 
 table {
   margin-inline: auto;
-  width: 80%;
+  /* width: 100%; */
+  width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
   border: 3px solid #646161;
 }
+
 thead {
   border-bottom: 3px solid #646161;
   font-weight: 40px;
@@ -80,26 +89,48 @@ th {
 th {
   background-color: #c0aaaa;
   font-weight: 700;
+  /* width: 3rem; */
 }
 
 tr {
   border-bottom: 1px solid #bdbbbb;
+  /* width: 3rem; */
+}
+
+p {
+  border-bottom: 6rem;
 }
 
 nav,
 main {
   width: 100%;
   margin-inline: auto;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   /* border: 5px solid green; */
 }
 
-/* span {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 1rem;
+button[type="submit"] {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  /* max-width: 400px; */
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
   font-weight: 700;
-} */
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
 
 footer,
 footer > span {
@@ -160,9 +191,7 @@ nav li a:focus {
   color: aliceblue;
   border-radius: 10px;
 }
-p {
-  margin: 1rem;
-}
+
 blockquote {
   margin: 1rem;
   padding: 1rem 0.2rem;
@@ -180,14 +209,16 @@ blockquote::before {
   color: #333;
   margin-right: 0.5rem;
 }
+
 blockquote::after {
   content: "”";
   font-size: 2rem;
   color: #333;
   margin-left: 0.5rem;
 }
+
 article {
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   margin: 3rem;
   /* border: 3px solid #333; */
   border-radius: 10px;
@@ -203,10 +234,16 @@ caption {
   color: #333;
 }
 
+ul.style-1 {
+  list-style: circle;
+  margin-left: 4rem;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   margin: 0.5rem;
 }
@@ -227,6 +264,14 @@ li a:active {
 }
 
 /* CLASSES */
+.strong {
+  font-weight: 700;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
 
 .top-title {
   text-align: center;
@@ -249,6 +294,7 @@ li a:active {
   color: #333;
 }
 
+/* Style the navbar links */
 .navbar {
   background-color: #7e7c7c;
   overflow: hidden;
@@ -263,9 +309,76 @@ li a:active {
   /* border: 2px solid red; */
 }
 
-/* Style the navbar links */
 .navbar a {
   display: block;
   color: black;
   text-align: center;
+}
+
+/* Style the contact form */
+
+.contact-form {
+  border-radius: 10px;
+  width: 100%;
+  margin-inline: auto;
+  /* background-color: #e9e8e8; */
+  width: min(100%, 600px);
+  line-height: normal;
+}
+
+.contact-form input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0 2rem 0;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+fieldset {
+  background-color: #eeeeee;
+  border: 3px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.checkbox-question,
+.radio-question {
+  display: block;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    padding: 0;
+  }
 }

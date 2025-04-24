@@ -19,13 +19,15 @@
         <li><a href="language.html">Plain Language</a></li>
         <li><a href="#design">Design</a></li>
         <li><a href="about.html">About Me</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
+        <li>
+          <a href="contact.html">Contact Me</a>
+        </li>
       </ul>
     </nav>
     <main>
       <article>
         <h2 class="title-1">Disabilities in the United States</h2>
-        <p role="region" aria-labelledby="Summary" tabindex="0">
+        <p role="region" aria-labelledby="Summary">
           The 2021 American Community Survey by the Census Bureau reported 13%
           of all Americans have a non-institutionalized disability. Of the
           roughly 38,903,887 adults with a disability in the United States,
@@ -41,100 +43,139 @@
           residence, Utah, and the United States, Utah has a disabled population
           of 342,378 or 10.3% of the total population, compared to the United
           States which has 42,485,034 disabled people or 13.0% of the total
-          population. Table 1 shows the disparities between genders and types of
-          disabilities for Utah and the United States.
+          population.
         </p>
-        <table role="region" aria-label="table-1" tabindex="0">
-          <caption>
-            Table 1: Disability Type by Gender for Utah and the United States
-          </caption>
-          <thead>
-            <tr>
-              <th></th>
-              <th colspan="2">Male</th>
-              <th colspan="2">Female</th>
-              <th colspan="2">Total</th>
-            </tr>
-            <tr>
-              <th></th>
-              <th>Utah</th>
-              <th>United States</th>
-              <th>Utah</th>
-              <th>United States</th>
-              <th>Utah</th>
-              <th>United States</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cognitive Disability</td>
-              <td>8.8%</td>
-              <td>9.5%</td>
-              <td>12.7%</td>
-              <td>12.3%</td>
-              <td>10.7%</td>
-              <td>10.9%</td>
-            </tr>
-            <tr>
-              <td>Hearing Disability</td>
-              <td>7.6%</td>
-              <td>7.2%</td>
-              <td>4.2%</td>
-              <td>4.4%</td>
-              <td>5.9%</td>
-              <td>5.7%</td>
-            </tr>
-            <tr>
-              <td>Mobility Disability</td>
-              <td>6.6%</td>
-              <td>9.6%</td>
-              <td>10.7%</td>
-              <td>12.5%</td>
-              <td>8.7%</td>
-              <td>11.1%</td>
-            </tr>
-            <tr>
-              <td>Vision Disability</td>
-              <td>2.4%</td>
-              <td>4.4%</td>
-              <td>3.2%</td>
-              <td>5.3%</td>
-              <td>2.8%</td>
-              <td>4.9%</td>
-            </tr>
-            <tr>
-              <td>Self-Care Disability</td>
-              <td>1.9%</td>
-              <td>3.0%</td>
-              <td>2.4%</td>
-              <td>3.1%</td>
-              <td>2.1%</td>
-              <td>3.0%</td>
-            </tr>
-            <tr>
-              <td>Independent Living Disability</td>
-              <td>3.9%</td>
-              <td>4.8%</td>
-              <td>2.4%</td>
-              <td>7.9%</td>
-              <td>5.4%</td>
-              <td>6.4%</td>
-            </tr>
-            <tr>
-              <td>No Disability</td>
-              <td>79.3%</td>
-              <td>76.5%</td>
-              <td>75.5%</td>
-              <td>73.8%</td>
-              <td>77.4%</td>
-              <td>75.2%</td>
-            </tr>
-          </tbody>
-        </table>
+        <div style="overflow-x: auto">
+          <table
+            role="region"
+            aria-label="table-1"
+            summary="This table shows percentages of different types of disabilities by gender for Utah and the United States. Categories include cognitive, hearing, mobility, vision, self-care, independent living disabilities, and those with no disability."
+          >
+            <caption>
+              Table 1: Disability Type by Gender for Utah and the United States
+            </caption>
+
+            <thead>
+              <tr>
+                <th id="disability-type-header" scope="col">Disability Type</th>
+                <th id="male-utah" scope="col">Male - Utah</th>
+                <th id="male-us" scope="col">Male - United States</th>
+                <th id="female-utah" scope="col">Female - Utah</th>
+                <th id="female-us" scope="col">Female - United States</th>
+                <th id="total-utah" scope="col">Total - Utah</th>
+                <th id="total-us" scope="col">Total - United States</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Cognitive Disability</th>
+                <td headers="male-utah">8.8%</td>
+                <td headers="male-us">9.5%</td>
+                <td headers="female-utah">12.7%</td>
+                <td headers="female-us">12.3%</td>
+                <td headers="total-utah">10.7%</td>
+                <td headers="total-us">10.9%</td>
+              </tr>
+              <tr>
+                <th scope="row">Hearing Disability</th>
+                <td headers="male-utah">7.6%</td>
+                <td headers="male-us">7.2%</td>
+                <td headers="female-utah">4.2%</td>
+                <td headers="female-us">4.4%</td>
+                <td headers="total-utah">5.9%</td>
+                <td headers="total-us">5.7%</td>
+              </tr>
+              <tr>
+                <th scope="row">Mobility Disability</th>
+                <td headers="male-utah">6.6%</td>
+                <td headers="male-us">9.6%</td>
+                <td headers="female-utah">10.7%</td>
+                <td headers="female-us">12.5%</td>
+                <td headers="total-utah">8.7%</td>
+                <td headers="total-us">11.1%</td>
+              </tr>
+              <tr>
+                <th scope="row">Vision Disability</th>
+                <td headers="male-utah">2.4%</td>
+                <td headers="male-us">4.4%</td>
+                <td headers="female-utah">3.2%</td>
+                <td headers="female-us">5.3%</td>
+                <td headers="total-utah">2.8%</td>
+                <td headers="total-us">4.9%</td>
+              </tr>
+              <tr>
+                <th scope="row">Self-Care Disability</th>
+                <td headers="male-utah">1.9%</td>
+                <td headers="male-us">3.0%</td>
+                <td headers="female-utah">2.4%</td>
+                <td headers="female-us">3.1%</td>
+                <td headers="total-utah">2.1%</td>
+                <td headers="total-us">3.0%</td>
+              </tr>
+              <tr>
+                <th scope="row">Independent Living Disability</th>
+                <td headers="male-utah">3.9%</td>
+                <td headers="male-us">4.8%</td>
+                <td headers="female-utah">2.4%</td>
+                <td headers="female-us">7.9%</td>
+                <td headers="total-utah">5.4%</td>
+                <td headers="total-us">6.4%</td>
+              </tr>
+              <tr>
+                <th scope="row">No Disability</th>
+                <td headers="male-utah">79.3%</td>
+                <td headers="male-us">76.5%</td>
+                <td headers="female-utah">75.5%</td>
+                <td headers="female-us">73.8%</td>
+                <td headers="total-utah">77.4%</td>
+                <td headers="total-us">75.2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <span class="strong">Table 1 - Summary:</span> <br />This table shows
+          the disparities between genders (male, female) and types of
+          disabilities. The 7 rows represent six disability types: cognitive,
+          hearing, mobility, vision, self-care, and independent living, as well
+          as the percentage of individuals reporting no disability. The columns
+          show the corresponding population percentages by gender.
+        </p>
+        <p class="strong">Key highlights:</p>
+        <ul class="style-1">
+          <li>
+            Cognitive disabilities are more common among females than males in
+            both Utah and the U.S.
+          </li>
+          <li>
+            Hearing disabilities are more prevalent in males across both
+            regions.
+          </li>
+          <li>
+            Mobility and vision disabilities tend to be higher nationally than
+            in Utah.
+          </li>
+          <li>
+            Independent living disabilities show a higher rate among females
+            nationally.
+          </li>
+          <li>
+            The majority of people in both Utah and the U.S. report no
+            disability, with slightly higher rates in Utah.
+          </li>
+        </ul>
         <p>
           There are a few reasons why these disparities exist; however, that is
           not a topic for this page.
         </p>
+        <!-- <p>
+          <span class="strong">Table 2 - Summary:</span> <br />This table
+          presents the percentages of different types of disabilities by race
+          (white, black, Asian, Native American, Pacific Islander, and other)
+          and location (Utah, United States).
+        </p> -->
+
         <p>
           When it comes to representation by race, there are some interesting
           differences between Utah and the United States. Table 2: Disability
@@ -151,49 +192,58 @@
           people), we can understand the importance of building accessible
           experiences for all people.
         </p>
-
-        <table role="region" aria-label="table-2" tabindex="0">
-          <caption>
-            Table 2. Rates of disabilities in the United States
-          </caption>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Utah</th>
-              <th>United States</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>White</td>
-            <td>10.8%</td>
-            <td>14.0%</td>
-          </tr>
-          <tr>
-            <td>Black or African-American</td>
-            <td>10.1%</td>
-            <td>14.5%</td>
-          </tr>
-          <tr>
-            <td>American Indian and Alaska Natives</td>
-            <td>18.6%</td>
-            <td>15.1%</td>
-          </tr>
-          <tr>
-            <td>Asian</td>
-            <td>7.8%</td>
-            <td>7.8%</td>
-          </tr>
-          <tr>
-            <td>Native Hawai’ian and Other Pacific Islanders</td>
-            <td>9.9%</td>
-            <td>12.9%</td>
-          </tr>
-          <tr>
-            <td>Hispanic or Latino</td>
-            <td>8.2%</td>
-            <td>9.9%</td>
-          </tr>
-        </table>
+        <div style="overflow-x: auto">
+          <table role="region" aria-label="table-2">
+            <caption>
+              Table 2. Disability Percent by Race in the United States
+            </caption>
+            <thead>
+              <tr>
+                <th id="race-header" scope="col">Race/Ethnicity</th>
+                <th id="utah-header" scope="col">Utah</th>
+                <th id="us-header" scope="col">United States</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" headers="race-header">White</th>
+                <td headers="utah-header">10.8%</td>
+                <td headers="us-header">14.0%</td>
+              </tr>
+              <tr>
+                <th scope="row" headers="race-header">
+                  Black or African-American
+                </th>
+                <td headers="utah-header">10.1%</td>
+                <td headers="us-header">14.5%</td>
+              </tr>
+              <tr>
+                <th scope="row" headers="race-header">
+                  American Indian and Alaska Natives
+                </th>
+                <td headers="utah-header">18.6%</td>
+                <td headers="us-header">15.1%</td>
+              </tr>
+              <tr>
+                <th scope="row" headers="race-header">Asian</th>
+                <td headers="utah-header">7.8%</td>
+                <td headers="us-header">7.8%</td>
+              </tr>
+              <tr>
+                <th scope="row" headers="race-header">
+                  Native Hawai’ian and Other Pacific Islanders
+                </th>
+                <td headers="utah-header">9.9%</td>
+                <td headers="us-header">12.9%</td>
+              </tr>
+              <tr>
+                <th scope="row" headers="race-header">Hispanic or Latino</th>
+                <td headers="utah-header">8.2%</td>
+                <td headers="us-header">9.9%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </article>
       <article>
         <h2 class="title-1">Universal Design is Design for All</h2>
@@ -248,7 +298,7 @@
           It has also been built to meet the Level AA requirements of WCAG 2.1.
         </p>
       </article>
-      <aside role="region" aria-label="references" tabindex="0">
+      <aside role="region" aria-label="references">
         <h2 class="title-1">References</h2>
 
         <ul>
