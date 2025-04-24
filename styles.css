@@ -267,6 +267,13 @@ li a:active {
 .strong {
   font-weight: 700;
 }
+.profile-img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin: 1rem 0;
+  display: inline-block;
+}
 
 .error {
   color: red;
