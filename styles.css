@@ -158,31 +158,6 @@ nav li a:focus {
   /* border-radius: 10px; */
 }
 
-/* 888888888888888
-
-.navbar {
-  background-color: #7e7c7c;
-  overflow: hidden;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  color: #fff;
-
-}
-
-.navbar a {
-  display: block;
-  color: black;
-  text-align: center;
-  border: 3px solid green;
-}
-
-8888888*/
-
 button[type="submit"] {
   display: block;
   margin-bottom: 15px;
@@ -294,9 +269,8 @@ li a:active {
   font-weight: 700;
 }
 .profile-img {
-  /* width: 50%; */
   width: 300px;
-  /* height: auto; */
+
   border-radius: 50%;
   margin: 1rem 0;
   /* display: inline-block; */
@@ -344,12 +318,19 @@ li a:active {
 }
 
 /* Style the contact form */
-
+.contact {
+  /* margin: 0 7rem 1rem 7rem; */
+  /* padding-left: 5rem; */
+  background-color: #eeeeee;
+  margin-inline: auto;
+  width: min(100%, 600px);
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
 .contact-form {
   border-radius: 10px;
-  width: 100%;
   margin-inline: auto;
-  /* background-color: #e9e8e8; */
   width: min(100%, 600px);
   line-height: normal;
 }
