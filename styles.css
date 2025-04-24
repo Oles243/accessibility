@@ -305,6 +305,17 @@ li a:active {
   color: #333;
 }
 
+.title-2__p {
+  margin-left: 1rem;
+  ul {
+    margin-left: 3rem;
+  }
+}
+
+.list ul {
+  margin-left: 3.5rem;
+  list-style: circle;
+}
 /* Style the navbar links */
 .navbar {
   background-color: #7e7c7c;
